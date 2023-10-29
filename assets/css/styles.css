@@ -155,8 +155,9 @@ footer .border-start {border-color: rgba(var(--colorPrimary),1) !important;}
   .container-fluid {max-width: 100%;}
 
   header .main-nav {padding-top: 20px;}
-  .navbar {flex-wrap: nowrap;}
   .navbar-toggler {background-color: var(--colorRed);}
+  .navbar .navbar-brand {max-width: 200px; margin-right: 0;}
+  .navbar-collapse {margin-top: 10px; text-align: center;}
   .top-nav {position: unset; border: none;}
   .top-nav > .container-fluid {padding: 0;}
   .top-nav ul {display: block;}
