@@ -10,4 +10,28 @@ $(document).ready(function(){
             el.hide();
         });
     });
+
+    function elementScrolled(elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+        var elemTop = $(elem).offset().top;
+        return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
+    }
+
+    $(window).scroll(function(){
+        if(elementScrolled('.about-us')) {
+            $('.about-us').addClass('visible');
+        }
+        if(elementScrolled('.community')) {
+            $('.community').addClass('visible');
+        }
+        $('.services .item').each(function(){
+            if(elementScrolled($(this))) {
+                $(this).addClass('visible');
+            }
+        });
+        if(elementScrolled('footer')) {
+            $('footer').addClass('visible');
+        }
+    });
 });
