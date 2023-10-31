@@ -35,3 +35,44 @@ $(document).ready(function(){
         }
     });
 });
+
+// swiper js
+
+var swiper = new Swiper(".mySwiper", {
+    centeredSlides: true,
+    slidesPerGroupSkip: 3,
+    spaceBetween: 30,
+    observer: true,
+    observeParents: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    fade: true,
+    grabCursor: true,
+    keyboard: {
+      enabled: true,
+    },
+    breakpoints: {
+      1280: {
+        slidesPerView: 3,
+      },
+      769:{
+        slidesPerView: 2,
+      },
+      600:{
+        slidesPerView: 1,
+        slidesPerGroupSkip: 1,
+      }
+    },
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
