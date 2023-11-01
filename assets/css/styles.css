@@ -141,6 +141,7 @@ footer .border-start {border-color: rgba(var(--colorPrimary),1) !important;}
 
 .community {position:relative; overflow:hidden; }
 .community .section-content {background: #d9d9d9 url('../images/community-bg.png') no-repeat center top; background-size: auto 100%; }
+.community .section-content .community-mobile-v{display: none;}
 .community .content-left, .community .content-right {position: relative;}
 .community .content-left {transform: translate3d(-100%,0,0);}
 .community.visible .content-left, .community.visible .content-right {transform: none; transition: .9s transform;}
@@ -158,6 +159,42 @@ footer .border-start {border-color: rgba(var(--colorPrimary),1) !important;}
 
 @media screen and (min-width: 768px) and (max-width: 1023px)  {
   
+}
+@media screen and (max-width: 768px)  {
+  header .main-nav .container-fluid {max-width: 100%; padding: 0;}
+  header .main-nav .navbar-brand {margin: 20px 0 0 15px;}
+
+  header .main-nav {padding: 0 !important;}
+  header .main-nav .navbar {flex-wrap: nowrap;}
+  header .main-nav .navbar-toggler {background-color: var(--colorRed); border-radius: 0 0 0 20px; position: absolute; top: 0; right: 0;}
+  header .main-nav .collapse {position: absolute; top: 40px; right: 0; z-index: 99; background: #fff; padding: 20px;}
+  
+  #hero .hero-right a .display-1 {font-size: 4rem !important;}
+  #hero .hero-right a {display: block; max-width: max-content; padding: 0;}
+  #hero .hero-right {background: url('../images/hero_bg_mobile.webp') top 5px left 0 no-repeat !important; background-size: 350px !important;}
+  #hero .hero-right a > span, .text  {font-size: 29px;}
+  #hero .hero-right a > span.text-or {position: relative; margin-bottom: 15px;}
+  #hero .hero-right a > span.text-or:before {font-size: 16px;}
+  #hero .hero-right a > span.text-more {font-size: 16px; color: #fff; background: #d03833; padding: 12px; border-radius: 20px;}
+
+  .services .item {display: block; padding: 0 30px;}
+
+  .about-us .content {padding: 0;}
+  .about-us .about-us-text {background: #D9D9D9; padding: 20px !important; margin: 0;}
+  .about-us .commercial h2 {background: var(--colorRed); padding: 20px 0 40px 0; margin: 0;}
+  .about-us .commercial .position-relative img {position: relative; padding: 0 40px; margin: -25px 0 0 0; z-index: 1;}
+
+  .community .section-content .content-left, .community .section-content .content-right {display: none;}
+  .community .section-content .community-mobile-v {display: flex; flex-wrap: wrap; padding: 20px 0; gap: 20px;}
+  
+  .service-area .text-start h3,h2 {text-align: center;}
+  .service-area .section-content .row {padding: 0 10px;}
+
+  .full-width .item .content, .full-width .item.flex-row-reverse .content {padding: 20px !important;}
+  .full-width .item {padding: 0 20px !important;}
+
+  footer .container-fluid a, .border-start {display: flex; align-items: center; justify-content: center;}
+  footer .container-fluid .border-start {display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding-left: 0 !important;}
 }
 
 @media screen and (max-width: 1023px)  {
@@ -180,7 +217,7 @@ footer .border-start {border-color: rgba(var(--colorPrimary),1) !important;}
 
   #hero:before {content: none;}
   #hero .tagline, #hero .hero-left {display: none;}
-  #hero .hero-right {position: unset; background: none; width: 100%;}
+  #hero .hero-right {position: unset; background: none; width: 100%; padding: 30px !important;}
   #hero .hero-right a {max-width: 100%;}
 
   .about-us {background-image: none;}
