@@ -217,7 +217,7 @@ footer .border-start {border-color: rgba(var(--colorPrimary),1) !important;}
 
   #hero:before {content: none;}
   #hero .tagline, #hero .hero-left {display: none;}
-  #hero .hero-right {position: unset; background: none; width: 100%;}
+  #hero .hero-right {position: unset; background: none; width: 100%; padding: 30px !important;}
   #hero .hero-right a {max-width: 100%;}
 
   .about-us {background-image: none;}
