@@ -38,6 +38,8 @@ section .section-title {text-align: center; background-color: var(--colorRed); p
 section .section-title h2 {color: #ffffff; text-transform: uppercase; margin-bottom: 0;}
 section .section-title h3 {font-weight: 400; color: #d9d9d9; margin-bottom: 0;}
 section .section-title + .section-content {padding-top: 50px; padding-bottom: 50px;}
+
+.display-1 {font-size: 1.75em;}
 /* common - end */
 
 /* header - start */
@@ -47,6 +49,7 @@ section .section-title + .section-content {padding-top: 50px; padding-bottom: 50
 .top-nav ul li:first-child a {padding-left: 85px; border-bottom-left-radius: 60px; background: rgba(var(--colorPrimary),1) url('../images/icons/call-icon.png') no-repeat 45px center;}
 .top-nav ul li:last-child a {border-bottom-right-radius: 20px;}
 
+header {box-shadow: 1px 10px 19px -3px rgba(0,0,0,0.64); -webkit-box-shadow: 1px 10px 19px -3px rgba(0,0,0,0.64); -moz-box-shadow: 1px 10px 19px -3px rgba(0,0,0,0.64); position: relative; z-index: 99;}
 header .main-nav {padding-top: 50px;}
 .navbar {padding: 0 0 30px;}
 .navbar .navbar-brand {padding: 0; margin-right: 70px}
@@ -163,14 +166,16 @@ footer .border-start {border-color: rgba(var(--colorPrimary),1) !important;}
 @media screen and (max-width: 1023px)  {
   .container-fluid {max-width: 100%;}
 
+  header {border-top: 21px solid #263461;}
   header .main-nav {padding-top: 20px;}
   .navbar {flex-wrap: nowrap;}
-  .navbar-toggler {background-color: var(--colorRed);}
+  .navbar-toggler {background-color: var(--colorRed); position: absolute; right: -6px; top: -35px; border-radius: 0 0 0 20px;}
   .top-nav {position: unset; border: none;}
   .top-nav > .container-fluid {padding: 0;}
   .top-nav ul {display: block;}
   .top-nav ul li a {display: block; text-align: center;}
   .top-nav ul li:first-child a {border-bottom-left-radius: 0; background-image: none; padding-left: 30px;}
+  .top-nav ul li:last-child a {border-radius: 0; box-shadow: 1px 10px 19px -3px rgba(0,0,0,0.64); -webkit-box-shadow: 1px 10px 19px -3px rgba(0,0,0,0.64); -moz-box-shadow: 1px 10px 19px -3px rgba(0,0,0,0.64);}
 
   footer div.border-start {border: none !important; margin-top: 30px;}
   footer .content-last {margin-top: 30px;}
@@ -180,8 +185,9 @@ footer .border-start {border-color: rgba(var(--colorPrimary),1) !important;}
 
   #hero:before {content: none;}
   #hero .tagline, #hero .hero-left {display: none;}
-  #hero .hero-right {position: unset; background: none; width: 100%;}
-  #hero .hero-right a {max-width: 100%;}
+  #hero .hero-right {position: unset; background: none; width: 100%; text-align: center;}
+  #hero .hero-right a {max-width: 100%; font-size: 36px;}
+  #hero .hero-right a > span.text-more {background-color: #d03833; color: #ffffff; font-size: 20px; padding: 10px 20px; border-radius: 10px; display: inline-block;}
 
   .about-us {background-image: none;}
   .about-us .image {display: none;}
