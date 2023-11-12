@@ -4,9 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>BUTCHER Air Conditioning</title>
-		<link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.webp">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
 		<link href="assets/css/styles.css" rel="stylesheet">
 	</head>
 	<body>
@@ -15,7 +16,7 @@
 				<div class="container-fluid">
 					<nav class="navbar navbar-expand-lg">
 						<a class="navbar-brand" href="#">
-							<img src="assets/images/icons/logo.png" alt="Butchers Air Conditioning" class="img-fluid" />
+							<img src="assets/images/icons/logo.webp" alt="Butchers Air Conditioning" class="img-fluid" />
 						</a>
 						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
@@ -37,7 +38,7 @@
 			<div class="top-nav">
 				<div class="container-fluid">
 					<ul>
-						<li><a href="tel:+3372433376" class="bg-dblue">Call 24/7 (337) 243.3376</a></li>
+						<li><a href="tel:+3372433376" class="bg-dblue"><img src="./assets/images/icons/call-icon.webp" alt="Call" class="me-3"/>Call 24/7 (337) 243.3376</a></li>
 						<li><a href="#" class="bg-red">FREE QUOTE</a></li>
 						<li><a href="#" class="bg-lblue">Online Bill Pay</a></li>
 					</ul>
@@ -46,14 +47,22 @@
 		</header>
 		<div id="jingle">
 			<button type="button" class="btn-plain btn-primary" data-bs-toggle="tooltip" data-bs-placement="left" title="Listen to the Classic Butcher Jingle">
-				<img src="assets/images/icons/butcher-icon-white.png" alt="Butcher icon" class="mb-2" />
-				<img src="assets/images/icons/music-icon-white.png" alt="Music icon" />
+				<img src="assets/images/icons/butcher-icon-white.webp" alt="Butcher icon" class="mb-2" />
+				<img src="assets/images/icons/music-icon-white.webp" alt="Music icon" />
 			</button>
 			<div class="truck">
 				<div class="bg-red">
-					<img src="assets/images/truck.png" alt="Truck" width="350" />
+					<img src="assets/images/truck-transparent.webp" alt="Truck" width="350" />
 				</div>
-				<div class="bg-gray tagline">“Serving Acadiana since 1949”</div>
+				<div class="bg-gray tagline">
+					“Serving Acadiana since 1949”
+					<div class="mt-3 text-center">
+						<audio controls id="audioPlayer">
+							<source src="assets/audio/butcher-air-conditioning.mp3" type="audio/mpeg">
+							Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
 			</div>
 		</div>
 		<main>
@@ -65,10 +74,10 @@
 				<div class="tagline"><span>“Serving Acadiana</span>Since 1949”</div>
 				<div class="hero-left">
 					<div class="ts-2 d-flex align-items-center">
-						<img src="assets/images/icons/ac-icon.png" alt="AC Repair" class="me-3" /> AC Repair
+						<img src="assets/images/icons/ac-icon.webp" alt="AC Repair" class="me-3" /> AC Repair
 					</div>
 					<div class="ts-3 text-gray">24/7 Emergency Support</div>
-					<div class="ts-1 d-flex align-items-center"><img src="assets/images/icons/call-icon-white.png" alt="Call" class="me-3" />(337) 243.3376</div>
+					<div class="ts-1 d-flex align-items-center"><img src="assets/images/icons/call-icon-white.webp" alt="Call" class="me-3" />(337) 243.3376</div>
 				</div>
 				<div class="hero-right">
 					<a href="#">
@@ -89,19 +98,19 @@
 					<div class="row items-wrap">
 						<div class="col-xs-12 col-lg-4 mb-3">
 							<a href="#" title="AC Repair" class="item">
-								<div class="image"><img src="assets/images/ac-repair.jpg" alt="AC Repair" class="img-fluid" /></div>
+								<div class="image"><img src="assets/images/ac-repair.webp" alt="AC Repair" class="img-fluid" /></div>
 								<span class="title">AC Repair</span>
 							</a>
 						</div>
 						<div class="col-xs-12 col-lg-4 mb-3">
 							<a href="#" title="Insulation" class="item">
-								<div class="image"><img src="assets/images/insulation.jpg" alt="Insulation" class="img-fluid" /></div>
+								<div class="image"><img src="assets/images/insulation.webp" alt="Insulation" class="img-fluid" /></div>
 								<span class="title">Insulation</span>
 							</a>
 						</div>
 						<div class="col-xs-12 col-lg-4 mb-3">
 							<a href="#" title="Maintenance Agreement" class="item">
-								<div class="image"><img src="assets/images/maintenance-agreement.jpg" alt="Maintenance Agreement" class="img-fluid" /></div>
+								<div class="image"><img src="assets/images/maintenance-agreement.webp" alt="Maintenance Agreement" class="img-fluid" /></div>
 								<span class="title">Maintenance Agreement</span>
 							</a>
 						</div>
@@ -111,39 +120,34 @@
 			<section class="about-us">
 				<div class="container-fluid">
 					<div class="image col-lg-4">
-						<img src="assets/images/about-us.png" alt="About us" class="img-fluid" />
+						<img src="assets/images/about-us.webp" alt="About us" class="img-fluid" />
 					</div>
 					<div class="row">
 						<div class="content col-lg-8 offset-lg-4">
 							<div class="about-us-text">
 								<h2>About Us</h2>
-								<p><strong>Butcher Air Conditioning is the #1 Trane Dealer in Louisiana</strong> and has been catering to Acadiana and the surrounding area for over 74 Years. We are dedicated to providing superior Air Conditioning Service & Heating Service, Air Conditioner & Heater Repair, Preventative Maintenance, Central Air Conditioning & Heating, HVAC replacements, Generators, Air Purifiers, Duct Work replacement, Foam Insulation and Fiber Insulation.</p>
+								<p class="mb-2"><strong>Butcher Air Conditioning is the #1 Trane Dealer in Louisiana</strong> and has been catering to Acadiana and the surrounding area for over 74 Years. We are dedicated to providing superior Air Conditioning Service & Heating Service, Air Conditioner & Heater Repair, Preventative Maintenance, Central Air Conditioning & Heating, HVAC replacements, Generators, Air Purifiers, Duct Work replacement, Foam Insulation and Fiber Insulation.</p>
 								<div class="more">
 									<a href="#">Read More...</a>
 								</div>
 							</div>
 							<div class="commercial row">
-								<div class="col-lg-4 offset-lg-2">
-									<img src="assets/images/icons/logo.png" alt="BUTCHER Air Conditioning" width="180" class="img-fluid mb-5" />
+								<div class="position-relative">
+									<img src="./assets/images/commercial.webp" alt="Commercial" class="img-fluid"/>
 									<h2>Watch our <br/> latest commercial ></h2>
-								</div>
-								<div class="col-lg-6">
-									<div class="position-relative">
-										<img src="assets/images/commercial.png" alt="Commercial" width="420" class="img-fluid" />
-										<button type="button" class="btn-plain" data-bs-toggle="modal" data-bs-target="#commercialModal"><img src="assets/images/icons/play-icon.png" alt="Play" width="60" /></button>
-
-										<div class="modal fade" id="commercialModal" tabindex="-1" aria-labelledby="commercialModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
-											<div class="modal-dialog modal-dialog-centered modal-xl">
-											<div class="modal-content">
-												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-												<div class="modal-body">
-													<video width="100%" height="100%" controls>
-														<source src="assets/video/video.mp4" type="video/mp4">
-														Your browser does not support the video tag.
-													</video>
-												</div>
+									<img src="./assets/images/commercial-tv.webp" alt="Commercial" class="img-fluid tv"/>
+									<button type="button" class="btn-plain" data-bs-toggle="modal" data-bs-target="#commercialModal"><img src="assets/images/icons/play-icon.webp" alt="Play" width="60" /></button>
+									<div class="modal fade" id="commercialModal" tabindex="-1" aria-labelledby="commercialModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+										<div class="modal-dialog modal-dialog-centered modal-xl">
+										<div class="modal-content">
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											<div class="modal-body">
+												<video width="100%" height="100%" controls>
+													<source src="assets/video/video.mp4" type="video/mp4">
+													Your browser does not support the video tag.
+												</video>
 											</div>
-											</div>
+										</div>
 										</div>
 									</div>
 								</div>
@@ -158,6 +162,101 @@
 					<div class="container-fluid"><h2>Customer Reviews</h2></div>
 				</div>
 				<div class="section-content container-fluid">
+					<div class="carousel">
+						<div class="item">
+							<div>
+								<div class="rating">
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+								</div>
+								<blockquote class="blockquote">
+									<p>"Butcher AC to the rescue!!! Thank goodness for such professional service! Our heat has been out all night. Had a plumber out last week and apparently he turned off all of the gas to our units."</p>
+									<div class="blockquote-footer"><cite title="Source Title">Erin F.</cite> Lafayette</div>
+								</blockquote>
+							</div>
+						</div>
+						<div class="item">
+							<div>
+								<div class="rating">
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+								</div>
+								<blockquote class="blockquote">
+									<p>"Easter Sunday, one phone call and repairman is here in 30 minutes. That is service. I do have a maintenance agreement and that helped with no ot charges and discount on parts. The Tech was courteous and prompt and had to go to the shop..."</p>
+									<div class="blockquote-footer"><cite title="Source Title">Cindy R.</cite> Lafayette</div>
+								</blockquote>
+							</div>
+						</div>
+						<div class="item">
+							<div>
+								<div class="rating">
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+								</div>
+								<blockquote class="blockquote">
+									<p>"I want to give your employees Bruce and helpers praise for exceeding my expectations while installing my A/C. Although it seems very hard to find the combination of Great Customer Service & A Quality Job Well Done, You'll are accomplishing just that!!"</p>
+									<div class="blockquote-footer"><cite title="Source Title">Randal</cite> Lafayette</div>
+								</blockquote>
+							</div>
+						</div>
+						<div class="item">
+							<div>
+								<div class="rating">
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+								</div>
+								<blockquote class="blockquote">
+									<p>"Easter Sunday, one phone call and repairman is here in 30 minutes. That is service. I do have a maintenance agreement and that helped with no ot charges and discount on parts. The Tech was courteous and prompt and had to go to the shop..."</p>
+									<div class="blockquote-footer"><cite title="Source Title">Cindy R.</cite> Lafayette</div>
+								</blockquote>
+							</div>
+						</div>
+						<div class="item">
+							<div>
+								<div class="rating">
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+								</div>
+								<blockquote class="blockquote">
+									<p>"I want to give your employees Bruce and helpers praise for exceeding my expectations while installing my A/C. Although it seems very hard to find the combination of Great Customer Service & A Quality Job Well Done, You'll are accomplishing just that!!"</p>
+									<div class="blockquote-footer"><cite title="Source Title">Randal</cite> Lafayette</div>
+								</blockquote>
+							</div>
+						</div>
+						<div class="item">
+							<div>
+								<div class="rating">
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star checked"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+								</div>
+								<blockquote class="blockquote">
+									<p>"Butcher AC to the rescue!!! Thank goodness for such professional service! Our heat has been out all night. Had a plumber out last week and apparently he turned off all of the gas to our units."</p>
+									<div class="blockquote-footer"><cite title="Source Title">Erin F.</cite> Lafayette</div>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<!-- <div class="section-content container-fluid">
 					<div id="carouselReviewsControls" class="carousel slide" data-bs-ride="carousel">
 						<div class="carousel-inner">
 							<div class="carousel-item active">
@@ -280,7 +379,7 @@
 							<span class="visually-hidden">Next</span>
 						</button>
 					</div>
-				</div>
+				</div> -->
 			</section>
 
 			<section class="community">
@@ -290,11 +389,11 @@
 				<div class="section-content">
 					<div class="d-lg-flex justify-content-between">
 						<div class="col-lg-5 content-left">
-							<img src="assets/images/photo-gallery.png" alt="Photo gallery" class="img-fluid" />
+							<img src="assets/images/photo-gallery.webp" alt="Photo gallery" class="img-fluid" />
 							<a href="#" title="Visit our photo gallery">Visit our<br/> photo gallery</a>
 						</div>
 						<div class="col-lg-5 offset-lg-2 content-right">
-							<img src="assets/images/truck.png" alt="truck" class="img-fluid" />
+							<img src="assets/images/truck.webp" alt="truck" class="img-fluid" />
 							<p><strong>Butcher Air Conditioning</strong> has supported the Acadiana area for over 75 years, and we continue to do so.</p>
 							<a href="#" title="Visit our history page">Visit our<br/> history page</a>
 						</div>
@@ -319,7 +418,7 @@
 							<div class="col-lg-4">
 								<div class="image">
 									<h4>LOUISIANA</h4>
-									<div><img src="assets/images/service-area.jpg" alt="Service area" class="img-fluid" /></div>
+									<div><img src="assets/images/service-area.webp" alt="Service area" class="img-fluid" /></div>
 								</div>
 							</div>
 							<div class="col-lg-7 offset-lg-1">
@@ -358,7 +457,7 @@
 				<div class="d-lg-flex item">
 					<div class="w-50">
 						<div class="image">
-							<img src="assets/images/ac-repair-lg.jpg" alt="AC Repair" class="img-fluid" />
+							<img src="assets/images/ac-repair-lg.webp" alt="AC Repair" class="img-fluid" />
 						</div>
 					</div>
 					<div class="w-50 pe-3">
@@ -372,7 +471,7 @@
 				<div class="d-lg-flex flex-row-reverse item">
 					<div class="w-50">
 						<div class="image">
-							<img src="assets/images/insulation-lg.jpg" alt="Insulation" class="img-fluid" />
+							<img src="assets/images/insulation-lg.webp" alt="Insulation" class="img-fluid" />
 						</div>
 					</div>
 					<div class="w-50 ps-3">
@@ -386,7 +485,7 @@
 				<div class="d-lg-flex item">
 					<div class="w-50">
 						<div class="image">
-							<img src="assets/images/maintenance-agreement-lg.jpg" alt="Maintenance Agreement" class="img-fluid" />
+							<img src="assets/images/maintenance-agreement-lg.webp" alt="Maintenance Agreement" class="img-fluid" />
 						</div>
 					</div>
 					<div class="w-50 pe-3">
@@ -404,24 +503,24 @@
 					<div class="row align-items-center">
 						<div class="col-lg-3">
 							<a href="/" title="BUTCHER Air Conditioning">
-								<img src="assets/images/icons/logo.png" alt="BUTCHER Aire Conditioning" class="img-fluid" />
+								<img src="assets/images/icons/logo.webp" alt="BUTCHER Aire Conditioning" class="img-fluid" />
 							</a>
 						</div>
 						<div class="col-lg-3 border-start ps-5">
-							<img src="assets/images/icons/one-acadiana-logo.png" alt="One Acadiana" class="img-fluid" width="150" />
+							<img src="assets/images/icons/one-acadiana-logo.webp" alt="One Acadiana" class="img-fluid" width="150" />
 							<div class="row align-items-center mt-5">
 								<div class="col">
-									<img src="assets/images/icons/love-logo.png" alt="Love" class="img-fluid" width="60" />
+									<img src="assets/images/icons/love-logo.webp" alt="Love" class="img-fluid" width="60" />
 								</div>
 								<div class="col">
-									<img src="assets/images/icons/accredited-business-logo.png" alt="Accredited Business" class="img-fluid" width="180" />
+									<img src="assets/images/icons/accredited-business-logo.webp" alt="Accredited Business" class="img-fluid" width="180" />
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-5 offset-lg-1">
 							<div class="content-last">
 								<div class="image">
-									<img src="assets/images/truck-full.png" alt="Truck" class="img-fluid" width="400" />
+									<img src="assets/images/truck-full.webp" alt="Truck" class="img-fluid" width="400" />
 									<p class="tagline">“Serving Acadiana<br/> Since 1949”</p>
 								</div>
 							</div>
@@ -433,6 +532,7 @@
 		</main>
 		<script src="assets/js/code.jquery.com_jquery-3.7.1.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="assets/js/slick.min.js"></script>
 		<script src="assets/js/custom.js"></script>
 	</body>
 </html>
