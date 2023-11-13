@@ -128,7 +128,8 @@ footer .border-start {border-color: rgba(var(--colorPrimary),1) !important;}
 
 .reviews {background-color: var(--colorSecondary);}
 .reviews .carousel .item { padding: 10px; margin: 0 5px; text-align: center; background-color: #e4e4e4; border-radius: 22px; height: 100%;}
-.reviews .carousel .item > div {padding: 15px 30px; border: 3px solid rgba(var(--colorPrimary),1); border-radius: 20px; height: 400px;}
+.reviews .carousel .item > div {padding: 15px 30px; border: 3px solid rgba(var(--colorPrimary),1); border-radius: 20px; height: 100%; }
+.slick-track { display: flex !important; } .slick-slide { height: inherit !important; }
 .reviews .carousel .item blockquote {font-size: 1em;}
 .reviews .carousel .item .blockquote-footer {margin-top: 0; color: rgba(var(--colorPrimary),1); }
 .reviews .carousel .item .blockquote-footer:before {content: none;}
@@ -183,6 +184,13 @@ footer .border-start {border-color: rgba(var(--colorPrimary),1) !important;}
   footer .content-last p.tagline {left: 0; font-size: 1.2em;}
   ul.bullet-list {column-count: 2;}
 
+  #jingle {right: -270px;}
+  #jingle > button {margin-top: 20px;}
+  #jingle > button > img {max-width: 30px;}
+  #jingle .truck > div {width: 270px; height: 110px;}
+  #jingle .truck > div img {max-width: 85%; top: -30px;}
+  #jingle .truck > div.tagline {font-size: 1.5em; padding: 10px 15px; height: auto;}
+
   #hero:before {content: none;}
   #hero .tagline, #hero .hero-left {display: none;}
   #hero .hero-right {position: unset; background: none; width: 100%; text-align: center;}
@@ -214,4 +222,8 @@ footer .border-start {border-color: rgba(var(--colorPrimary),1) !important;}
   .services.full-width .item .pe-3 {padding-right: 0 !important;}
   .services.full-width .item .ps-3 {padding-left: 0 !important;}
   .services.full-width .item .content, .services.full-width .item.flex-row-reverse .content {padding: 50px; border-radius: 0;}
+
+  .carousel {max-width: 80%; margin: 0 auto;}
+  .slick-prev {left: -30px;}
+  .slick-next {right: -30px;}
 }
